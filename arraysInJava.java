@@ -45,17 +45,18 @@ public class arraysInJava {
           System.out.println("Elements of the array are: ");
           //output values of array
           for(int i=0;i<size;i++){
-            System.out.println(arr[i]);
+            System.out.print(arr[i]+" ");
           }
+          System.out.println();
           System.out.print("Enter the element to be searched: ");
           int search = sc.nextInt();
-          System.out.print("Element is found at index: ");
           //traverse the array
           for(int i=0;i<size;i++){
-            if(search == i){
-                System.out.println(arr[i]);
+            if(search == arr[i]){
+              System.out.println("Element is found at index: "+i);
             }
           }
+          
 
      }
     
