@@ -19,18 +19,45 @@ public class arraysInJava {
         // System.out.println(arr[i]);
         // }
         
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of array: ");
-        int size = sc.nextInt();
-        int arr[] = new int[size];
-        int i;
-        for(i=0;i<size;i++);{
-            arr[i] = sc.nextInt();
-        }
-        for(i=0;i<size;i++){
-            System.out.println(arr[i]);
-        }
+        //This array will take input from the user and print the values.
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.print("Enter the size of array: ");
+    //     int size = sc.nextInt();
+    //     int arr[] = new int[size];
+    //     for(int i=0;i<size;i++){
+    //         arr[i] = sc.nextInt();
+    //     }
+    //     System.out.println("Elements in the array are: ");
+    //     for(int i=0;i<size;i++){
+    //         System.out.println(arr[i]);
+    //     }
 
-    }
+          //This array will take input from the user and find the value at a particular index.
+          Scanner sc = new Scanner(System.in);
+          System.out.print("Enter the size of array: ");
+          int size = sc.nextInt();
+          int arr[] = new int[size];
+          System.out.print("Enter the elements of array: ");
+          //input values in the array
+          for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+          }
+          System.out.println("Elements of the array are: ");
+          //output values of array
+          for(int i=0;i<size;i++){
+            System.out.println(arr[i]);
+          }
+          System.out.print("Enter the element to be searched: ");
+          int search = sc.nextInt();
+          System.out.print("Element is found at index: ");
+          //traverse the array
+          for(int i=0;i<size;i++){
+            if(search == i){
+                System.out.println(arr[i]);
+            }
+          }
+
+     }
+    
 
 }
