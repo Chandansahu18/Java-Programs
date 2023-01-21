@@ -52,8 +52,14 @@ public class arraysInJava {
           int search = sc.nextInt();
           //traverse the array
           for(int i=0;i<size;i++){
+<<<<<<< HEAD
             if(search == arr[i]){
               System.out.println("Element is found at index: "+i);
+=======
+            if(search == i){
+                System.out.println(arr[i]);
+                
+>>>>>>> 40f8da8b0c5a67a357e0296f27d817c6eaeb69cc
             }
           }
           
