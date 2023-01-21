@@ -54,6 +54,7 @@ public class arraysInJava {
           for(int i=0;i<size;i++){
             if(search == i){
                 System.out.println(arr[i]);
+                
             }
           }
 
