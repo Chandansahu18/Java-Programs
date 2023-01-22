@@ -59,6 +59,23 @@ public class stringsInJava {
         // }else{
         //     System.out.println("Strings are not equal.");
         // }
+
+        //This will take input string from the user and print the substring.
+      //   Scanner sc = new Scanner(System.in);
+      //   System.out.println("Enter the string:");
+      //   String string = sc.nextLine();
+      //   String substring = string.substring(5);
+      //   System.out.println("Substring: "+substring);
+         
+       //parseInt() & toString() methods
+      //  String string = "123";
+      //  int var = Integer.parseInt(string);
+      //  System.out.println(var);
+
+      //  int integer = 1234;
+      //  String str = Integer.toString(integer);
+      //  System.out.println(str);
+       
         }
     
 }
