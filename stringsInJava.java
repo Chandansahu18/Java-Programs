@@ -4,8 +4,8 @@ public class stringsInJava {
 
     public static void main(String[] args) {
       //String declaration
-    //   String name = "Chandan";
-    //   System.out.println("Name: "+name);
+      // String name = "Chandan";
+      // System.out.println("Name: "+name);
       
        //String Concatenation
     //   String name1 = "Chandan";
@@ -75,7 +75,18 @@ public class stringsInJava {
       //  int integer = 1234;
       //  String str = Integer.toString(integer);
       //  System.out.println(str);
-       
+
+      //This will take input from the user and print the total number of vowels in the string.
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter a string: ");
+        String string = sc.nextLine();
+        String newString = "";
+        for(int i=0;i<string.length();i++){
+            if(string.charAt(i)=='e'|| string.charAt(i)=='a' || string.charAt(i)=='i' || string.charAt(i)=='o' || string.charAt(i)=='u'){
+                newString += string.charAt(i);
+            }
         }
-    
+        System.out.print(newString.length());
+    }
 }
+      
