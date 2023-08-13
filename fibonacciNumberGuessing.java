@@ -12,6 +12,8 @@ public class fibonacciNumberGuessing {
             output = i+num; 
         }
         System.out.println(num+"th"+" Fibonacci number is: "+output);
+
      }
 }
 //This code has an error due to which correct output is not coming. 
+
