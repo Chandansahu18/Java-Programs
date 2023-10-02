@@ -1,25 +1,46 @@
 import java.util.*;
 public class arrayInJava_revisionPractice {
 
-
-   public void arrMax(){
-    int Max = 0;
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter the size of array: ");
-    int size = sc.nextInt();
-    int[] arr = new int[size];
-    System.out.print("Enter the elements  in the array: ");
-    for(int i=0;i<arr.length;i++){
-        arr[i] = sc.nextInt(); //Taking input 
-    } 
-    for(int i=0;i<arr.length;i++){
-        if(arr[i]>Max){
-         Max = arr[i];
+    public void arrIndex(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array size: ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        System.out.println("Enter the elements in the array: ");
+        for(int i=0;i<arr.length;i++){
+            arr[i] = sc.nextInt();
         }
+        System.out.println("Enter the element to be searched: ");
+        int search = sc.nextInt();
+        boolean found = false;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] == search){
+               System.out.println("Element is found at index: "+i);
+               found = true;
+            }
+        }
+        if(!found)
+        System.out.println("-1");
     }
-        System.out.println();
-        System.out.println("Max element is: "+Max);
-    }
+
+//    public void arrMax(){
+//     int Max = 0;
+//     Scanner sc = new Scanner(System.in);
+//     System.out.print("Enter the size of array: ");
+//     int size = sc.nextInt();
+//     int[] arr = new int[size];
+//     System.out.print("Enter the elements  in the array: ");
+//     for(int i=0;i<arr.length;i++){
+//         arr[i] = sc.nextInt(); //Taking input 
+//     } 
+//     for(int i=0;i<arr.length;i++){
+//         if(arr[i]>Max){
+//          Max = arr[i];
+//         }
+//     }
+//         System.out.println();
+//         System.out.println("Max element is: "+Max);
+//     }
 
    
 
@@ -90,6 +111,7 @@ public class arrayInJava_revisionPractice {
         //object.oneDemensionArray();
         //object.multiDemensionArray();
         //object.arrSum();
-        object.arrMax();
+        //object.arrMax();
+        object.arrIndex();
     }
 }
